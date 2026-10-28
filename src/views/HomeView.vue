@@ -1,22 +1,29 @@
 <script setup>
-    import { onMounted } from 'vue'
+import { onMounted } from 'vue'
     import gsap from 'gsap'
     import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
     gsap.registerPlugin(ScrollTrigger)
 
-    onMounted(() => {
+    const animate = () => {
         gsap.utils.toArray("main > *, footer > *").forEach((el) => {
             gsap.from(el, {
                 opacity: 0,
                 y: 40,
-                duration: 0.8,
                 scrollTrigger: {
                     trigger: el,
                     start: "top 85%",
                 },
             })
         })
+    }
+
+    onMounted(() => {
+        if (document.readyState === 'complete') {
+            animate()
+        } else {
+            window.addEventListener('load', animate)
+        }
     })
 </script>
 
