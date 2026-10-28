@@ -1,3 +1,25 @@
+<script setup>
+    import { onMounted } from 'vue'
+    import gsap from 'gsap'
+    import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+    gsap.registerPlugin(ScrollTrigger)
+
+    onMounted(() => {
+        gsap.utils.toArray("main > *, footer > *").forEach((el) => {
+            gsap.from(el, {
+                opacity: 0,
+                y: 40,
+                duration: 0.8,
+                scrollTrigger: {
+                    trigger: el,
+                    start: "top 85%",
+                },
+            })
+        })
+    })
+</script>
+
 <template>
     <header class="flex items-center justify-between border-b-2 border-[gray] m-4">
         <picture>
