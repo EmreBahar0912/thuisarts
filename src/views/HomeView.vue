@@ -37,15 +37,15 @@
         <section class="bg-[#D73F0D] text-white p-4 rounded-2xl mb-4">
             <h2 class="text-2xl font-medium">Download nu de app van Thuisarts</h2>
             <p>Met de app heb je Thuisarts steeds bij de hand. Zo vind je snel een betrouwbaar antwoord op al je vragen over gezondheid en ziekte.</p>
-            <div class="flex justify-between">
-                <a class="flex items-center gap-2 bg-black w-fit rounded-[20px] p-2 mt-4">
+            <div class="flex justify-between my-4">
+                <a class="flex items-center gap-2 bg-black w-fit rounded-[20px] p-2">
                     <img class="size-[50px] rounded-none object-cover" src="https://rabbitlogo.com/wp-content/uploads/2026/01/apple-1.jpg" alt="">
                     <section>
                         <p>Download in de</p>
                         <h3 class="text-xl font-medium">App Store</h3>
                     </section>
                 </a>
-                <a class="flex items-center gap-2 bg-black w-fit rounded-[20px] p-2 mt-4">
+                <a class="flex items-center gap-2 bg-black w-fit rounded-[20px] p-2">
                     <img class="size-[50px] rounded-none object-cover" src="https://cdn.vectorstock.com/i/500p/55/50/google-play-logo-white-vector-46345550.jpg" alt="">
                     <section>
                         <p>Ontdek het op</p>
